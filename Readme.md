@@ -14,3 +14,5 @@ As a statistician, I want to know the probability of getting a head and tail in 
 - Hashcode basically creates the hashcode for the object and `equals()` use this hashcode to compare the objects.
 - Here we changed the `equals()` definition to check the object and its value but, hashcode remains different for both of these objects which is inconsistent.
 - To solve this inconsistency, we override the `hashcode()` method to create the hashcode for the passed value of the object.
+
+

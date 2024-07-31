@@ -24,4 +24,6 @@ public class Probability {
     public int hashCode() {
         return Double.valueOf(probabilityValue).hashCode();
     }
+
+
 }

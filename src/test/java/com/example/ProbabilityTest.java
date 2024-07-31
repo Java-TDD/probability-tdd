@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ProbabilityTest {
@@ -15,4 +16,14 @@ public class ProbabilityTest {
 
         assertThat(probabilityOfHead, is(equalTo(probabilityOfTail)));
     }
+
+    @Test
+    public void toCheckTheInequalityWhenProbabilityOfGettingHeadIsComparedWithProbabilityOfGettingOneInDice(){
+        Probability probabilityOfHead = new Probability(0.5);
+        Probability probabilityOfOneInDice = new Probability(0.16);
+
+        assertThat(probabilityOfHead, is(not(equals(probabilityOfOneInDice))));
+    }
+
+
 }
