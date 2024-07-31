@@ -1,6 +1,5 @@
 package com.example;
 
-import java.util.Objects;
 
 public class Probability {
 
@@ -15,16 +14,10 @@ public class Probability {
         if(this == object){
             return true;
         }
-        if(object == null){
+        if(object == null || this.getClass() != object.getClass()){
             return false;
         }
-        if(this.getClass() != object.getClass()){
-            return false;
-        }
-        if(this.probabilityValue == ((Probability) object).probabilityValue){
-            return true;
-        }
-        return false;
+        return this.probabilityValue == ((Probability) object).probabilityValue;
     }
 
     @Override
