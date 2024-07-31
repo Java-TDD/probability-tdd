@@ -16,3 +16,15 @@ As a statistician, I want to know the probability of getting a head and tail in 
 - To solve this inconsistency, we override the `hashcode()` method to create the hashcode for the passed value of the object.
 
 
+## Requirement 2:
+As a statistician, I want to be able to know the probability of two events occurring together.
+
+### Testcase:
+- Create two objects for probability of certain events.
+- Then we write test case to find the probability of the events occurring together.
+- Probability of Two certain events occurring together is equal to a probability of certain event
+
+### Codebase:
+- We implement the method to find the union of the two events (occurring together);
+- Implement the `and()` method to find the union of two events.
+- P(AUB) = P(A) * P(B)

@@ -25,5 +25,12 @@ public class ProbabilityTest {
         assertThat(probabilityOfHead, is(not(equals(probabilityOfOneInDice))));
     }
 
+    @Test
+    public void toCheckWhetherTheProbabilityOfTwoCertainEventOccurringTogetherIsAlsoACertainEvent(){
+        Probability certainEventProbability = new Probability(1);
+        Probability anotherCertainEventProbability = new Probability(1);
+
+        assertThat(certainEventProbability.and(anotherCertainEventProbability), is(equalTo(certainEventProbability)));
+    }
 
 }
